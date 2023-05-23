@@ -27,9 +27,9 @@
                             </div>
                             <div>
                                 <label class="text-gray-700 py-2 mt-2" for="heading">Heading</label>
-                                <input class="form-input w-full rounded-md bg-gray-200 focus:bg-white" type="text" name="heading" value="{{ old('heading', $headline->heading) }}" placeholder="Text Heading">
+                                <textarea id="editor1" name="heading">{{ old('heading', $headline->heading) }}</textarea>
                                 @error('heading')
-                                    <div class="w-full bg-red-200 shadow-sm rounded-md overflow-hidden mt-2">
+                                    <div class="w-full bg-red-200 shadow-sm rounded-md overflow-hidden">
                                         <div class="px-4 py-2">
                                             <p class="text-gray-600 text-sm">{{ $message }}</p>
                                         </div>
@@ -38,7 +38,7 @@
                             </div>
                             <div class="">
                                 <label class="text-gray-700 py-2 mt-2" for="description">Description</label>
-                                <textarea id="editor1" name="description">{{ old('description', $headline->description) }}</textarea>
+                                <textarea id="editor2" name="description">{{ old('description', $headline->description) }}</textarea>
                                 @error('description')
                                     <div class="w-full bg-red-200 shadow-sm rounded-md overflow-hidden">
                                         <div class="px-4 py-2">

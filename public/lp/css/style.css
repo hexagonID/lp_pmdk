@@ -147,13 +147,12 @@ Common :: Ends
 2. Header / header :: Starts
 */
 header {
-	background-color: #FFF0E9;
 	height: 100px;
 	margin: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* position: fixed; */
+	position: relative;
 	/* top: 0; */
 	/* left: 0; */
 	/* right: 0; */
@@ -176,7 +175,6 @@ header .nav .logo img {
 }
 
 header.admin {
-	background-color: #FFF0E9;
 	height: 100px;
 	margin: auto;
 	display: flex;
@@ -401,6 +399,9 @@ header.homepage-3 .nav-menu .nav-links {
 Header / header :: Ends
 */
 
+.headline{
+	padding: 100px 0;
+}
 
 /*------------------------------------------------------------------
 3. Banner Section / .banner-section :: Starts

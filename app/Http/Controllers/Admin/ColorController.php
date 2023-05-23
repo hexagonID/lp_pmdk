@@ -42,6 +42,8 @@ class ColorController extends Controller
                 'color3'                   => $request->color3,
                 'color4'                   => $request->color4,
                 'color5'                   => $request->color5,
+                'color_body1'              => $request->color_body1,
+                'color_body2'              => $request->color_body2,
                 
             ]);
 

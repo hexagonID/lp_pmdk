@@ -87,6 +87,36 @@
                         </td>
                         <td ><div style="width: 77px; height: 40px; margin-left:10px; margin-bottom:-8px; border-radius:5px; background-color: {{$color->color5}};"></div></td>
                     </tr>
+                    <tr>
+                        <td>Body Color 1</td>
+                        <td>: </td>
+                        <td style="width:100px;">
+                            <input class="form-input w-full mt-2 rounded-md bg-gray-200 focus:bg-white" type="text" name="color_body1" value="{{ old('color_body1', $color->color_body1) }}" placeholder="Kode Warna">
+                            @error('color_body1')
+                                <div class="w-full bg-red-200 shadow-sm rounded-md overflow-hidden mt-2">
+                                    <div class="px-4 py-2">
+                                        <p class="text-gray-600 text-sm">{{ $message }}</p>
+                                    </div>
+                                </div>
+                            @enderror
+                        </td>
+                        <td ><div style="width: 77px; height: 40px; margin-left:10px; margin-bottom:-8px; border-radius:5px; background-color: {{$color->color_body1}};"></div></td>
+                    </tr>
+                    <tr>
+                        <td>Body Color 2</td>
+                        <td>: </td>
+                        <td style="width:100px;">
+                            <input class="form-input w-full mt-2 rounded-md bg-gray-200 focus:bg-white" type="text" name="color_body2" value="{{ old('color_body2', $color->color_body2) }}" placeholder="Kode Warna">
+                            @error('color_body2')
+                                <div class="w-full bg-red-200 shadow-sm rounded-md overflow-hidden mt-2">
+                                    <div class="px-4 py-2">
+                                        <p class="text-gray-600 text-sm">{{ $message }}</p>
+                                    </div>
+                                </div>
+                            @enderror
+                        </td>
+                        <td ><div style="width: 77px; height: 40px; margin-left:10px; margin-bottom:-8px; border-radius:5px; background-color: {{$color->color_body2}};"></div></td>
+                    </tr>
                 </table>
 
                 <div class="flex justify-start mt-4">

@@ -20,6 +20,8 @@ return new class extends Migration
             $table->string('color3');
             $table->string('color4');
             $table->string('color5');
+            $table->string('color_body1');
+            $table->string('color_body2');
             $table->timestamps();
         });
     }

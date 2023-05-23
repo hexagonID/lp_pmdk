@@ -25,7 +25,7 @@
     <script src="https://cdn.ckeditor.com/ckeditor5/35.4.0/classic/ckeditor.js"></script>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100" style="color: {{ $colors[0]->color2 }} !important">
     <div x-data="{ sidebarOpen: false }" class="flex bg-gray-200 h-full font-roboto">
         <div :class="sidebarOpen ? 'block' : 'hidden'" @click="sidebarOpen = false"
             class="fixed z-20 inset-0 bg-black opacity-50 transition-opacity lg:hidden"></div>
