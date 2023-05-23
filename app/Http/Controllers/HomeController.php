@@ -16,10 +16,10 @@ use App\Models\Svg;
 class HomeController extends Controller
 {
     public function index(){
-        $sliders = Slider::latest()->take(4)->get();
+        //$sliders = Slider::latest()->take(4)->get();
         $testimonies = Testimony::latest()->take(4)->get();
         
-        return view('front.frontpage.index', compact('sliders','testimonies'));
+        return view('front.frontpage.index', compact('testimonies'));
     }
 
     
